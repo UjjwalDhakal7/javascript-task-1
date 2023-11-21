@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change text content</title>
+</head>
+<body>
+    <div id="content">
+        <h3 class="content">Click the button below to change text content.</h3>
+    </div>
+    <input type="button" onclick="changeContent()" value="click here">
+    <script>
+        function changeContent(){
+            var change = document.getElementById('content');
+            change.innerHTML="The content was changed.";
+            change.style.fontSize='30px';
+        }
+        
+    </script>
+</body>
+</html>
